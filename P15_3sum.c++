@@ -30,7 +30,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
         return result;
     }
 
-int main() {
+int main() {  
     int num[] = {-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0};
     vector<int> nums(num, num + 16);
     vector<vector<int>> arr;

@@ -3,11 +3,14 @@
 #include<algorithm>
 #include<numeric>
 using namespace std;
-
+int check(int *arr, char t) {
+        if(arr[t] != 0) return 0;
+        return 1;
+    }
 int main()
 {
-    int num[] = {0,0,0};
-    vector<int> nums(num + 0, num + 3);
-    cout<< accumulate(nums.begin(),nums.end(),0);
+    int a[128] = {0};
+    a[122] = 1;
+    cout << check(a, 'z');
     return 0;
 }
