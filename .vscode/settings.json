@@ -13,6 +13,7 @@
         "numeric": "cpp",
         "cmath": "cpp",
         "unordered_map": "cpp",
-        "atomic": "cpp"
+        "atomic": "cpp",
+        "limits": "cpp"
     }
 }

@@ -6,22 +6,23 @@
 #include <unordered_map>
 using namespace std;
 
+int search(vector<int>nums, int target) {
+    int pos, low = 0, high = nums.size() - 1;
+    while(high - low > 1) {
+        int mid = (low + high) / 2;
+        if(target > nums[mid]) low = mid;
+        else high = mid;
+    }
+    if(target == nums[low]) pos = low; 
+    else if(target == nums[high]) pos = high;
+    else pos = - 1;
+    return pos;
+}
+
 int main()
 {
-    vector<int> nums {1,2,3,4}; 
-    int tp1 = 1, tp2 = 1, n = nums.size();
-    vector<int> res(n), l(n), r(n);
-    
-    for(int i = 0, j = n - 1; i < n; i++, j--) {
-        tp1 *= nums[i];
-        l[i] = tp1;
-        tp2 *= nums[j];
-        r[i] = tp2;
-    }
-    for(auto i : l) 
-        cout << i << " ";
-    cout << endl;
-    for(auto i : r) 
-        cout << i << " ";
+    vector<int> nums = {1, 2, 3, 4, 5, 6};
+    int target = 2;
+    cout << search(nums, target);
     return 0;
 }
