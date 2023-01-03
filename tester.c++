@@ -18,7 +18,8 @@ int binary(int n) {
 
 int main()
 {
-    uint32_t n = 00000010100101000001111010011100;
-    cout << (n >> 28);
+    uint32_t n = pow(2)
+    cout << pow(2, 31);
+
     return 0;
 }
