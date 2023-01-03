@@ -15,5 +15,6 @@
         "unordered_map": "cpp",
         "atomic": "cpp",
         "limits": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
