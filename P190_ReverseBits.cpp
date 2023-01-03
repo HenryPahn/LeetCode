@@ -6,19 +6,16 @@
 #include <unordered_map>
 using namespace std;
 
-int binary(int n) {
-    int sum = 0, i = 0;
-    while(n > 0) {
-        sum += (n % 2) * pow(10, i);
-        i++;
-        n /= 2;
+void reverseBits(uint32_t n) {
+    n = (~n);
+    while(n) {
+        cout << (n & 1);
+        n >>= 1;
     }
-    return sum;
-} 
+}
 
-int main()
-{
+int main() {
     uint32_t n = 00000010100101000001111010011100;
-    cout << (n >> 28);
+    reverseBits(n);
     return 0;
 }
