@@ -6,20 +6,11 @@
 #include <unordered_map>
 using namespace std;
 
-int binary(int n) {
-    int sum = 0, i = 0;
-    while(n > 0) {
-        sum += (n % 2) * pow(10, i);
-        i++;
-        n /= 2;
-    }
-    return sum;
-} 
 
 int main()
 {
-    uint32_t n = pow(2)
-    cout << pow(2, 31);
-
+    vector<vector<int>> maxtrix{{0,1,2,0},{3,4,5,2},{1,3,1,5}};
+    for(int i = 0; i < maxtrix.size(); i++) 
+        cout << maxtrix[i][0] << " ";
     return 0;
 }

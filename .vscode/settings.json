@@ -14,7 +14,9 @@
         "cmath": "cpp",
         "unordered_map": "cpp",
         "atomic": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "list": "cpp",
+        "xhash": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
