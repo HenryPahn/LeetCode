@@ -8,7 +8,8 @@ using namespace std;
 
 int main()
 {
-    vector<vector<int>> maxtrix{{2, 3}};
-    cout << maxtrix.size();
+    string w = "dsfasere";
+    w[2] = 0; 
+    cout << w;
     return 0;
 }
