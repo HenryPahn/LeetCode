@@ -9,10 +9,14 @@
 #include <string>
 using namespace std;
 
-int main()
-{
-     string unformatted_full_name {"StephenHawking"};
-     string a {unformatted_full_name, 0, 7}; 
-     cout <<  a;
+inline int summ(int a, int b) {
+    return a + b;
+};
+
+int main() {
+    int n = 5; 
+    int *p = &n;
+    cout << sizeof p;
     return 0;
 }
+
