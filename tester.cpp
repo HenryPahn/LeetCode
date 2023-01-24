@@ -7,16 +7,15 @@
 #include <cstring>
 #include <cctype>
 #include <string>
+#include <fstream>
+#include <iomanip>
 using namespace std;
 
-inline int summ(int a, int b) {
-    return a + b;
-};
-
 int main() {
-    int n = 5; 
-    int *p = &n;
-    cout << sizeof p;
+    int a = 5, b = 6; 
+    int res = 1;
+    for(int i = 0; i < b; i++)
+        res *= a;
+        cout << pow(a, b);
     return 0;
 }
-
